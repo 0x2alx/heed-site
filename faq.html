@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Heed FAQ</title>
+<link rel="icon" href="assets/favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <img src="assets/heed-logo.png" alt="">
+    <a href="index.html">Heed</a>
+    <nav><a href="faq.html" aria-current="page">FAQ</a><a href="privacy.html">Privacy</a></nav>
+  </header>
+
+  <h1>FAQ</h1>
+  <p class="muted">Didn't find your answer? Open Heed, tap Help, then Report a problem, or write to 0x2alxm@gmail.com.</p>
+
+  <h2>How it works</h2>
+  <details id="how">
+    <summary>What does Heed do?</summary>
+    <p>You link Heed to one Bluetooth device you always carry, ideally your watch, and arm it. If that device disconnects from the phone (you walked away from the phone, or someone walked away with it), a short countdown starts. If the device doesn't come back in time, the phone rings loudly until you unlock it.</p>
+  </details>
+  <details id="device">
+    <summary>Which device should I link?</summary>
+    <ul>
+      <li><strong>Best:</strong> a watch or fitness band you wear all day.</li>
+      <li><strong>Earbuds:</strong> only work while you're wearing them. Take them out and Heed thinks you left.</li>
+      <li><strong>Your car:</strong> no. It disconnects every time you park. Use it in an auto-arm rule instead (Pro).</li>
+    </ul>
+    <p>The device has to be connected when you arm. A device that's already gone can't disconnect, so the alarm would never go off.</p>
+  </details>
+  <details id="distance">
+    <summary>How far can I walk before it rings?</summary>
+    <p>Usually 10 to 30 metres. Bluetooth range depends on walls, crowds and even which wrist the watch is on, and Android can take a few seconds to notice the disconnect. Then comes your delay (2 to 15 seconds, set under Alarm). A short delay catches a theft sooner; a longer one ignores brief dropouts.</p>
+  </details>
+  <details id="stop">
+    <summary>How do I stop the alarm?</summary>
+    <p>Unlock your phone (PIN, pattern or fingerprint). That always works, and it's the point: whoever is holding the phone can't silence it. Two optional extras:</p>
+    <ul>
+      <li><strong>Stop when the device reconnects:</strong> handy if you just forgot the phone on a table. Leave it off for theft protection, since a thief could walk back toward you to silence it.</li>
+      <li><strong>The Garmin watch app (Pro):</strong> a Stop button on your wrist.</li>
+    </ul>
+  </details>
+  <details id="after-stop">
+    <summary>Is Heed still armed after I stop the alarm?</summary>
+    <p>Only if your device is back. If you stop it while the device is still away, Heed disarms and tells you, so it doesn't keep ringing. Arm it again once the device is connected.</p>
+  </details>
+  <details id="power">
+    <summary>What if someone switches the phone off?</summary>
+    <p>No app can block the power button. If Heed was armed, it rings again as soon as the phone restarts and the device isn't there. For the rest, turn on Android's own theft protection: Theft Detection Lock, Offline Device Lock and Find Hub (Settings, then Security).</p>
+  </details>
+  <details id="battery">
+    <summary>Does Heed drain my battery?</summary>
+    <p>Not noticeably. Heed doesn't scan or poll; it waits for Android to report that the device disconnected. With the Garmin watch app, the phone sends the watch a small update every 30 seconds while armed.</p>
+  </details>
+
+  <h2>Setup and permissions</h2>
+  <details id="permissions">
+    <summary>Why does Heed need all these permissions?</summary>
+    <ul>
+      <li><strong>Nearby devices (Bluetooth):</strong> to see your devices and know when the linked one disconnects.</li>
+      <li><strong>Notifications and full-screen alerts:</strong> so the alarm screen appears even on a locked phone.</li>
+      <li><strong>Display over other apps:</strong> so the alarm screen shows on top of whatever app is open.</li>
+      <li><strong>Unrestricted battery:</strong> so Android doesn't put Heed to sleep while it's guarding your phone.</li>
+      <li><strong>Alarms and reminders:</strong> so scheduled auto-arm rules run on time.</li>
+    </ul>
+    <p>Heed has no servers and collects nothing. See the <a href="privacy.html">privacy policy</a>.</p>
+  </details>
+  <details id="screen-lock">
+    <summary>Why does Heed need a screen lock?</summary>
+    <p>Your unlock is what stops the alarm. Without a PIN, pattern or password, anyone could stop it, so Heed won't arm until a screen lock is set.</p>
+  </details>
+  <details id="test">
+    <summary>How do I know it works?</summary>
+    <p>Tap <strong>Test the alarm</strong>. It rings right away with your settings and stops exactly like the real thing. For a real test, arm Heed, leave the phone in a room and walk away with your watch.</p>
+  </details>
+
+  <h2>When something seems off</h2>
+  <details id="no-ring">
+    <summary>I walked away and it didn't ring</summary>
+    <ul>
+      <li>Check that Heed was <strong>armed</strong> and the device showed <strong>connected</strong> when you left.</li>
+      <li>Set Heed's battery use to <strong>Unrestricted</strong> (Heed shows this under Setup if it's missing). Some phones stop background apps aggressively.</li>
+      <li>You may still have been in Bluetooth range. Walk further, or test through a wall or two.</li>
+    </ul>
+    <p>Still not ringing? Open Heed, tap Help, then Report a problem, so we can see what happened.</p>
+  </details>
+  <details id="false-alarm">
+    <summary>It rang but my phone was right there</summary>
+    <p>The link dropped for longer than your delay. It happens with weak Bluetooth (the phone deep in a bag, the watch on the far side of your body) or with earbuds you took out. Raise the delay under Alarm, or link a device you wear.</p>
+  </details>
+  <details id="report">
+    <summary>How do I report a problem?</summary>
+    <p>In Heed, tap Help, then Report a problem. It prepares an email with a diagnostics file (app version, phone model, Heed's settings and event log). You see everything before sending, and nothing goes out unless you send it.</p>
+  </details>
+
+  <h2>Pro and the Garmin watch app</h2>
+  <details id="pro">
+    <summary>What's in Pro?</summary>
+    <p>A one-time purchase, no subscription, no account:</p>
+    <ul>
+      <li>Flashlight strobe and flashing screen</li>
+      <li>Your own alarm tone and volume</li>
+      <li>Auto-arm and auto-disarm: on a schedule, or when a Bluetooth device connects or disconnects (for example, arm when your car disconnects)</li>
+      <li>The Garmin watch app: stop, arm and disarm from your wrist, and an arrow back to where you left your phone</li>
+    </ul>
+  </details>
+  <details id="garmin">
+    <summary>How do I set up the Garmin watch app?</summary>
+    <ol>
+      <li>Install Heed on your watch from the Connect IQ store.</li>
+      <li>Make sure Garmin Connect is installed on the phone and the watch is paired.</li>
+      <li>Open Heed on the watch while your phone is unlocked. That watch becomes the only one allowed to control Heed. You can change it later in the app.</li>
+    </ol>
+    <p>Supported watches: fēnix 8 (43 mm, 47 mm, Solar 47 mm, Solar 51 mm, Pro 47 mm). More models are coming.</p>
+  </details>
+  <details id="find">
+    <summary>The watch says "Waiting for GPS"</summary>
+    <p>The arrow back to your phone needs a GPS fix on the watch, which only works outdoors. Step outside and give it a few seconds.</p>
+  </details>
+  <details id="iphone">
+    <summary>Is there an iPhone version?</summary>
+    <p>No, Heed is Android only.</p>
+  </details>
+
+  <footer><a href="index.html">Heed</a> · <a href="privacy.html">Privacy policy</a> · 0x2alxm@gmail.com</footer>
+</div>
+</body>
+</html>
