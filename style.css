@@ -53,3 +53,11 @@ details > :not(summary) { margin-left: 1.7rem; }
   color: var(--ink); text-decoration: none; }
 .links a span { display: block; color: var(--muted); font-size: .92rem; }
 footer { margin-top: 3.5rem; color: var(--muted); font-size: .88rem; }
+
+/* Theme guide: code samples and reference tables. */
+pre { background: var(--deep); border: 1px solid var(--line); border-radius: 10px; padding: .9rem 1rem; overflow-x: auto; font-size: .85rem; line-height: 1.5; }
+pre code { background: none; padding: 0; }
+.wrap table { display: block; overflow-x: auto; border-collapse: collapse; font-size: .9rem; margin: 1rem 0; }
+th, td { text-align: left; vertical-align: top; padding: .5rem .7rem; border-top: 1px solid var(--line); }
+th { color: var(--gold); white-space: nowrap; }
+td:first-child { white-space: nowrap; }
