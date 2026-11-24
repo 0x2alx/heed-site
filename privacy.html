@@ -16,7 +16,7 @@
   </header>
 
   <h1>Heed Privacy Policy</h1>
-  <p class="muted">Effective November 10, 2026. Applies to the Heed Android app (dev.alx.heed) and the Heed Garmin watch app.</p>
+  <p class="muted">Effective November 24, 2026. Applies to the Heed Android app (dev.alx.heed) and the Heed Garmin watch app.</p>
 
   <p><strong>The short version:</strong> Heed has no servers, no accounts, no analytics, no ads and no trackers. Everything it knows stays on your phone and watch. The only time anything reaches us is when you choose to email us a problem report.</p>
 
@@ -41,13 +41,13 @@
   <p>If you pick a font from Google Fonts for a theme (one that isn't built into Heed), Google Play services on your phone downloads it; Google sees which font family is requested. Heed itself has no network access for this, and the fonts built into the app never download anything.</p>
 
   <h2>Purchases</h2>
-  <p>Heed Pro is free for early users. Once paid Pro launches, it is a one-time purchase handled by Google Play. Google processes the payment under its own privacy policy; Heed only receives confirmation that Pro was bought. We never see your name, email or payment details. Heed's own code makes no network connections. Two libraries inside it do their own jobs: Google Play Billing talks to Google to process purchases, and Garmin's Connect IQ library talks to the Garmin Connect app on your phone.</p>
+  <p>Heed Pro is free for early users. Once paid Pro launches, it is a one-time purchase handled by Google Play. Google processes the payment under its own privacy policy; Heed only receives confirmation that Pro was bought. We never see your name, email or payment details. Heed's own code makes no network connections. Three libraries inside it do their own jobs: Google Play Billing talks to Google to process purchases, Google Play's in-app update library asks Google Play whether a newer Heed is available and downloads it, and Garmin's Connect IQ library talks to the Garmin Connect app on your phone.</p>
 
   <h2>The Garmin watch app</h2>
-  <p>The watch app and the phone app talk through Garmin Connect on your phone, which Garmin operates under its own privacy policy. The messages carry only Heed's state and commands (armed, alarm ringing, stop, arm, disarm). While Heed is armed, the watch saves its own GPS position on the watch so it can point you back to where you left your phone. It keeps only the most recent position, never sends it to the phone or to us, and uninstalling the watch app deletes it.</p>
+  <p>The watch app and the phone app talk through Garmin Connect on your phone, which Garmin operates under its own privacy policy. The messages carry only Heed's state (armed, alarm ringing, your linked device's name, whether Pro is on) and commands (stop, arm, disarm). While Heed is armed, the watch saves its own GPS position on the watch so it can point you back to where you left your phone. It keeps only the most recent position, never sends it to the phone or to us, and uninstalling the watch app deletes it.</p>
 
   <h2>Problem reports</h2>
-  <p>If you tap <strong>Report a problem</strong>, Heed opens your email app with a message to us and a text file attached: the app version, your phone model and Android version, Heed's settings and status, your auto-arm rules, which permissions are on, Heed's event log (which can include error and crash details), and how much memory Heed used and why it last stopped (as Android records it, including a short technical excerpt if it froze). Device names in it are replaced by short codes such as watch#1, and Bluetooth addresses and watch IDs are masked. You see the email before it goes out, and nothing is sent unless you send it. We use reports only to fix the problem you reported, never share them, and delete them within 90 days after the problem is resolved. You can ask us to delete a report sooner at the address above.</p>
+  <p>If you tap <strong>Report a problem</strong>, Heed opens your email app with a message to us and a text file attached: the app version, your phone model and Android version, Heed's settings and status, which permissions are on, Heed's event log (which can include error and crash details), and how much memory Heed used and why it last stopped (as Android records it, including a short technical excerpt if it froze). Device names in it are replaced by short codes such as watch#1, and Bluetooth addresses and watch IDs are masked. You see the email before it goes out, and nothing is sent unless you send it. We use reports only to fix the problem you reported, never share them, and delete them within 90 days after the problem is resolved. You can ask us to delete a report sooner at the address above.</p>
 
   <h2 id="delete">Deleting your data</h2>
   <p>Heed by Clumsy Clanker keeps your data on your own devices, so you delete it there:</p>
@@ -64,7 +64,7 @@
   <p>Our email is hosted by Proton (Switzerland), so a report you send is stored there.</p>
 
   <h2>Sharing</h2>
-  <p>We don't sell, rent or share any data. Apart from Google Play (purchases) and Garmin Connect (watch messages), no third party is involved.</p>
+  <p>We don't sell, rent or share any data. Apart from Google Play (purchases and updates) and Garmin Connect (watch messages), no third party is involved.</p>
 
   <h2>Security</h2>
   <p>Heed's data lives in Android's app-private storage, which other apps can't read. Watch commands are accepted only from Garmin Connect and only from the one watch you trusted.</p>
